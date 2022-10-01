@@ -19,3 +19,15 @@ function lettersPassword() {
     inputPassword.value = finalPassword;
     console.log(finalPassword);
 }
+
+// Create numbers password function
+function numbersPassword() {
+    inputPassword.value = "";
+    finalPassword = "";
+    var lenghtPassword = document.getElementById("lenght").value;
+    for (var i = 0; i < lenghtPassword; i++) { 
+        finalPassword += Math.floor(Math.random() * 10);
+    }
+    inputPassword.value = finalPassword;
+    console.log(finalPassword);
+} 
