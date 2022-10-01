@@ -1,0 +1,53 @@
+body {
+    background-color: #246EB9;
+}
+
+.container {
+    padding-top: 50px;
+    width: 50%;
+    height: 550px;
+    background-color: white;
+    box-shadow: 5px 5px 10px;
+    margin: auto;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.passwordContainer {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+input {
+    border-radius: 15px;
+}
+
+#password {
+    width: 240px;
+    height: 20px;
+}
+
+#generate {
+    width: 248px;
+    height: 25px;
+}
+
+.secondContainer {
+    display: inline-block;
+    width: 100%;
+}
+
+.type {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.lenght {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
