@@ -7,6 +7,8 @@ var inputPassword = document.getElementById("password");
 
 // Create letter password function
 function lettersPassword() {
+    inputPassword.value = "";
+    finalPassword = "";
     var lenghtPassword = document.getElementById("lenght").value;
     var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     var temporalPassword = "";
