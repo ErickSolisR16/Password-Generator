@@ -47,3 +47,17 @@ function lettersNumbersPassword() {
     inputPassword.value = finalPassword;
     console.log(finalPassword);
 }
+
+function allCaractersPassword() {
+    inputPassword.value = "";
+    finalPassword = "";
+    var lenghtPassword = document.getElementById("lenght").value;
+    var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789¡!¿?#$%^&*()_-+=[]''|/<>,.";
+    var temporalPassword = "";
+    for (var i = 0; i < lenghtPassword; i++) {
+        temporalPassword = Math.floor(Math.random() * str.length + 1); 
+        finalPassword += str.charAt(temporalPassword);
+        console.log(finalPassword);
+    }
+    inputPassword.value = finalPassword;
+}
