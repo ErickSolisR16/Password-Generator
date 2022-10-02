@@ -31,3 +31,19 @@ function numbersPassword() {
     inputPassword.value = finalPassword;
     console.log(finalPassword);
 } 
+
+// Create numbers and letters password function
+function lettersNumbersPassword() {
+    inputPassword.value = "";
+    finalPassword = "";
+    var lenghtPassword = document.getElementById("lenght").value;
+    var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var temporalPassword = "";
+    for (var i = 0; i <  lenghtPassword; i++) {
+        temporalPassword = Math.floor(Math.random() * str.length + 1); 
+        finalPassword += str.charAt(temporalPassword);
+        console.log(finalPassword);
+    }
+    inputPassword.value = finalPassword;
+    console.log(finalPassword);
+}
