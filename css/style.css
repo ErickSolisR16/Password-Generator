@@ -51,3 +51,7 @@ input {
     width: 50%;
     text-align: center;
 }
+
+#text {
+    padding-top: 25px;
+}
